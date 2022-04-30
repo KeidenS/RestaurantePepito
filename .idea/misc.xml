@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3365" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout-w1240dp/navigation_view.xml" value="0.15528781793842034" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout-w1240dp/toolbar.xml" value="0.15528781793842034" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout-w936dp/carrito_lista_card.xml" value="0.1" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/activity_login.xml" value="0.25271739130434784" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/activity_main.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/activity_maps.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/carrito_lista_card.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_card_direccion.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_card_plato_lista.xml" value="0.21732522796352582" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_carrito_.xml" value="0.21732522796352582" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_direccion_lista.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_direccion_registrar.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_home_.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_login_.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_pedido__registrar_.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_plato__lista__grid_.xml" value="0.21732522796352582" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_plato_detalle.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_plato_lista.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_registrar__usuario_direccion_.xml" value="0.3569230769230769" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_registrar_direccion_usuario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_usuario_actualizar.xml" value="0.24273858921161826" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/layout2.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/navigation_view.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/toolbar.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/menu/navigation_menu.xml" value="0.24166666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

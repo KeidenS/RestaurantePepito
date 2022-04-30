@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "43767697308",
+    "project_id": "automatic-bot-347917",
+    "storage_bucket": "automatic-bot-347917.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43767697308:android:1b05dba90aeb20c2d9c259",
+        "android_client_info": {
+          "package_name": "com.example.proyectocarrito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43767697308-int96vulejuknia3f728nfq402smq2f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKOE7SPKdhcuOMruUQLZS5kLQKdr9G-rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43767697308-int96vulejuknia3f728nfq402smq2f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43767697308:android:565ea9d2c2584a79d9c259",
+        "android_client_info": {
+          "package_name": "com.example.restaurantepepito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43767697308-int96vulejuknia3f728nfq402smq2f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKOE7SPKdhcuOMruUQLZS5kLQKdr9G-rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43767697308-int96vulejuknia3f728nfq402smq2f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

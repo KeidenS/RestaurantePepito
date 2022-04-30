@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+        <fragment
+            android:id="@+id/google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"></fragment>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/registrar_usuario_latitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/registrar_usuario_longitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </TextView>
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="247dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/registrar_direccion_contenedor_distrito"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registrar_usuario_direccion_distrito"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Distrito"
+
+                            android:layout_alignParentLeft="true"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/registrar_usuario_mi_ubicacion"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/registrar_direccion_contenedor_distrito"
+                        android:text="Ubicame"
+                        android:textSize="12dp">
+
+                    </Button>
+
+                </RelativeLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registrar_usuario_direccion_localidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Localidad"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registrar_usuario_direccion_direccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Direccion"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/contenedor_alias"
+                        android:layout_width="247dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+
+                        android:layout_marginBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registrar_usuario_direccion_alias"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Alias" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="137dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/contenedor_alias">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registrar_usuario_direccion_lote"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Lote" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/boton_registrar_usuario_direccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar"
+                    android:layout_gravity="center">
+
+                </Button>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
