@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:elevation="8dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rv_detalle_pedido_lista_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/detalle_pedido_informacion_envio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Informacion de Envio"
+                android:layout_marginBottom="10dp"
+                >
+
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Direccion del restaurante :"
+                android:fontFamily="@font/playfair_display_medium"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:id="@+id/restaurante_text_titulo"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".80"
+                    android:textColor="@color/black"
+                    android:background="@drawable/borde"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+
+
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/detalle_pedido_spinner_restaurante"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borde"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:focusable="false"
+                        android:fontFamily="@font/playfair_display_medium"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <Button
+                    android:id="@+id/detalle_pedido_boton_ver_mapa"
+
+                    android:drawableLeft="@drawable/ic_mapa"
+                    android:background="@color/amarillo_h"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".20"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:autoSizeTextType="uniform"
+
+
+                    >
+
+
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Direccio de entrega:"
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/detalle_direccion_text_titulo">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <Spinner
+                        android:id="@+id/detalle_pedido_spinner_direccion"
+
+
+                        android:fontFamily="@font/playfair_display_medium"
+                        android:popupBackground="@color/amarillo_h"
+
+
+
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".80"
+                        android:textColor="@color/black"
+                        android:background="@drawable/borde"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+
+
+
+
+
+                        android:elevation="20dp">
+
+                    </Spinner>
+
+                    <Button
+                        android:id="@+id/detalle_pedido_boton_agregar_direccion"
+
+                        android:drawableLeft="@drawable/ic_agregar_direccion"
+
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/amarillo_h"
+
+
+                        >
+
+
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pedido_id_tipo_pedido"
+                    android:visibility="gone">
+
+                </TextView>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pedido_plazo_pedido"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Atencion de 9:00 a 8:00"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Registro valido apartir de 30 minutos de la hora actual"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="10dp"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight=".80"
+                        android:textColor="@color/black"
+
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:textColorHint="@color/vino_h"
+
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/detalle_pedido_hora"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Hora"
+
+                            android:textColorHint="@color/vino_h"
+                            android:textColor="@color/vino_h"
+                            android:focusable="false"
+                            android:fontFamily="@font/playfair_display_medium"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <Button
+                        android:id="@+id/detalle_pedido_boton_hora"
+
+                        android:background="@color/amarillo_h"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:textColor="@color/black"
+
+                        android:autoSizeTextType="uniform"
+
+                        android:drawableLeft="@drawable/ic_hora"
+                        >
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detalle_pedido_id_restaurante"
+                    android:visibility="gone">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detalle_pedido_id_direccion"
+                    android:visibility="gone">
+
+                </TextView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight=".80"
+                        android:textColor="@color/black"
+
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:textColorHint="@color/vino_h"
+
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/detalle_pedido_fecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Fecha"
+                            android:textColorHint="@color/vino_h"
+                            android:textColor="@color/vino_h"
+                            android:focusable="false"
+                            android:fontFamily="@font/playfair_display_medium"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <Button
+                        android:id="@+id/detalle_pedido_boton_feha"
+
+                        android:background="@color/amarillo_h"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:textColor="@color/black"
+
+                        android:autoSizeTextType="uniform"
+
+                        android:drawableLeft="@drawable/ic_fecha"
+                        >
+
+                    </Button>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detalle_costo_envio_text_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Costo de envio:"
+
+                    android:textSize="15dp"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    >
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detalle_pedido_monto_envio"
+                    android:hint="S/8.08"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Costo Total:"
+
+                    android:textSize="15dp"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detalle_pedido_monto_total"
+                    android:hint="S/200.00"
+
+                    android:textSize="30dp"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="10dp">
+
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comprobante: "
+
+                    android:textSize="15dp"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Descargar"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/descargar"
+                    android:id="@+id/boton_detalle_pedido_documento">
+
+                </Button>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Recuerda que:"
+
+                    android:textSize="15dp"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="-No se podra actualizar el pedido cuando ya este preparado"
+
+                    android:textSize="12dp"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="12dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="-No se podra cancelar el pedido cuando ya este preparado"
+
+                    android:textSize="12dp"
+                    android:fontFamily="@font/playfair_display_bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="12dp"
+                    android:layout_marginBottom="20dp">
+
+                </TextView>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/detalle_pedido_boton_eliminar"
+                        android:layout_margin="10dp"
+
+
+                        android:fontFamily="@font/playfair_display_bold"
+                        android:text="Cancelar"
+                        android:background="@color/amarillo_h"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".40"
+                        android:textColor="@color/black"
+
+
+                        android:autoSizeTextType="uniform">
+
+                    </Button>
+
+                    <Button
+                        android:layout_margin="10dp"
+                        android:id="@+id/detalle_pedido_boton_actualizar"
+
+
+                        android:background="@color/amarillo_h"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".40"
+                        android:textColor="@color/black"
+
+                        android:autoSizeTextType="uniform"
+
+                        android:text="Actualizar"
+
+                        android:fontFamily="@font/playfair_display_bold">
+
+                    </Button>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

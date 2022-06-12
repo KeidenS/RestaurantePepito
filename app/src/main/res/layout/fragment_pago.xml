@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:layout_margin="10dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+
+                android:src="@drawable/diners_club"
+                android:layout_margin="20dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:autoSizeTextType="uniform">
+
+            </ImageView>
+
+            <ImageView
+
+                android:src="@drawable/american_express"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:autoSizeTextType="uniform"
+                android:layout_margin="20dp">
+
+            </ImageView>
+
+            <ImageView
+
+                android:src="@drawable/master_card"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:autoSizeTextType="uniform"
+                android:layout_margin="20dp">
+
+            </ImageView>
+
+            <ImageView
+
+                android:src="@drawable/visa"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:autoSizeTextType="uniform"
+                android:layout_margin="20dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="20dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/vino_h"
+                    android:text="Hoy Viernes 20 de Julio"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:id="@+id/fecha_actual_text"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:textColor="@color/black"
+                    android:text="Delivery para el Viernos 28 de Julio"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:id="@+id/fecha_epdido_text">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tarjeta"
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/black"
+                    android:text="De 14:00 a 13:45"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:id="@+id/fecha_hora_text">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/pago_monto_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:text="S/200.00"
+                    android:textColor="@color/vino_h"
+                    android:maxLength="16"
+
+                    android:fontFamily="@font/playfair_display_bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/vino_h"
+            android:textColor="@color/vino_h"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pago_numero_tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Numero de Tarjeta"
+                android:inputType="numberDecimal"
+                android:digits="0123456789"
+                android:maxLength="16"
+                android:textColorHint="@color/vino_h"
+                android:textColor="@color/vino_h"
+                android:fontFamily="@font/playfair_display_medium"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".40"
+                android:autoSizeTextType="uniform"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/vino_h"
+                android:textColor="@color/vino_h"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pago_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CVV"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789"
+                    android:maxLength="3"
+                    android:textColorHint="@color/vino_h"
+                    android:textColor="@color/vino_h"
+                    android:fontFamily="@font/playfair_display_medium"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:autoSizeTextType="uniform"
+                android:textColorHint="@color/vino_h"
+                android:textColor="@color/vino_h"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pago_mes_vencimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mes"
+                    android:layout_marginRight="2dp"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789"
+                    android:maxLength="2"
+                    android:textColorHint="@color/amarillo_h"
+                    android:fontFamily="@font/playfair_display_medium"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".30"
+                android:autoSizeTextType="uniform"
+                android:textColorHint="@color/vino_h"
+                android:textColor="@color/vino_h"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pago__anio_vencimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Año"
+                    android:inputType="numberDecimal"
+                    android:digits="0123456789"
+                    android:maxLength="4"
+                    android:textColorHint="@color/vino_h"
+                    android:textColor="@color/vino_h"
+                    android:fontFamily="@font/playfair_display_medium"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/registrar_pago_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Confirmar Pago"
+            android:drawableLeft="@drawable/pago"
+            android:textColor="@color/black"
+            android:fontFamily="@font/playfair_display_bold">
+
+        </Button>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

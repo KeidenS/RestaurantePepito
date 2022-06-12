@@ -70,7 +70,7 @@ public class Direccion_Lista_Fragment extends Fragment {
 
         DireccionApi svc = retrofit.create(DireccionApi.class);
 
-
+        Log.e("=========","============" + id_usuario);
         Call<List<Usuari_Direccion_Model>> lista_valores = svc.listar_direccion(id_usuario);
         lista_valores.enqueue(new Callback<List<Usuari_Direccion_Model>>() {
 

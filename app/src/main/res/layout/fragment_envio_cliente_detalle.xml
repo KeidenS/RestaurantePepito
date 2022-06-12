@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    >
+
+    <TextView
+        android:fontFamily="@font/playfair_display_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direccion de Restaurante y de Envio:"
+        android:layout_marginBottom="5dp"
+
+        android:textStyle="bold"
+        android:textColor="@color/vino_h">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/playfair_display_medium"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Restaurante"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/playfair_display_medium"
+            android:background="@drawable/borde"
+            android:focusable="false"
+            android:id="@+id/restaurante_envio"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/playfair_display_medium">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Direccion"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/playfair_display_medium"
+            android:background="@drawable/borde"
+            android:focusable="false"
+            android:id="@+id/direccion_envio"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:fontFamily="@font/playfair_display_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado del envio:"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/vino_h"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/playfair_display_medium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/envio_detalle_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/playfair_display_medium"
+            android:focusable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:fontFamily="@font/playfair_display_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre y apellido del repartidor:"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/vino_h"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/playfair_display_medium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/envio_detalle_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:fontFamily="@font/playfair_display_medium"
+            android:focusable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfair_display_medium"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/envio_detalle_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:fontFamily="@font/playfair_display_medium"
+            android:focusable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

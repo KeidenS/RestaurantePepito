@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Restaurante Pepito"
-        android:background="@color/purple_200"/>
+
+        app:titleTextColor="@color/black"
+
+        android:background="@color/amarillo_h"/>
 
 </com.google.android.material.appbar.AppBarLayout>

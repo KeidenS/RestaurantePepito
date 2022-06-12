@@ -74,6 +74,35 @@ public class DbPedido_x_Plato extends DbHelper{
 
     }
 
+    public Pedido_x_PlatopModel buscar_Pedidos(Integer plato_id){
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        Pedido_x_PlatopModel lista_pedidos = new Pedido_x_PlatopModel();
+        Pedido_x_PlatopModel pedidoModel = null;
+        Cursor cursorPedidos = null;
+
+        cursorPedidos = db.rawQuery("SELECT * FROM " + TABLE_PEDIDO_X_PLATO + " WHERE id_plato = '"+ plato_id + "'", null);
+
+        if(cursorPedidos.moveToFirst()){
+            do {
+                pedidoModel = new Pedido_x_PlatopModel();
+                pedidoModel.setId_pedido(cursorPedidos.getInt(0));
+                pedidoModel.setNombre(cursorPedidos.getString(1));
+                pedidoModel.setPrecio(cursorPedidos.getDouble(2));
+                pedidoModel.setCantidad(cursorPedidos.getInt(3));
+                pedidoModel.setSubtotal(cursorPedidos.getDouble(4));
+                pedidoModel.setId_plato(cursorPedidos.getInt(5));
+                lista_pedidos = pedidoModel;
+            }while(cursorPedidos.moveToNext());
+        }
+
+        cursorPedidos.close();
+        return lista_pedidos;
+
+    }
+
+
     public boolean eliminarPedido(int id_pedido){
         boolean correcto = false;
         DbHelper dbHelper = new DbHelper(context);
@@ -92,5 +121,25 @@ public class DbPedido_x_Plato extends DbHelper{
         return correcto;
 
     }
+
+    public boolean actualizarPedido(int id_pedido,int cantidads,double subtotals){
+        boolean correcto = false;
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+
+        try{
+            db.execSQL("UPDATE " + TABLE_PEDIDO_X_PLATO + " SET cantidad='"+cantidads+"',subtotal='"+subtotals+"' WHERE id_pedido = '" + id_pedido + "'");
+            correcto = true;
+        }catch (Exception ex){
+            ex.toString();
+            correcto = false;
+        }finally {
+            db.close();;
+        }
+        return correcto;
+
+    }
+
 
 }

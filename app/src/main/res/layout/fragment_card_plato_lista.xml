@@ -10,53 +10,103 @@
 
 
 
+
     >
 
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+
+
         >
+
+
+
 
 
         <ImageView
             android:id="@+id/lista_imagen_plato"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:srcCompat="@tools:sample/backgrounds/scenic"
+
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".50"
+
+            android:gravity="center"
+            android:autoSizeTextType="uniform"/>
+
+
+
+
+
 
 
         <!--Contenedor de los textos Titulo y Descripcion-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
+
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".50"
+
+
+                android:autoSizeTextType="uniform">
+
+
+
+                <TextView
+                    android:id="@+id/card_plato_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:fontFamily="@font/playfair_display_regular"
+                    android:textColor="@color/black"
+                    android:text="Papa a la Huancaina"
+
+
+                    android:autoSizeTextType="uniform"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/card_plato_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="@color/black"
+                    android:text="$26.00"
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:autoSizeTextType="uniform"
+
+
+                    />
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/card_plato_boton_detalle"
+
+            android:background="@color/amarillo_h"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".20"
+            android:drawableLeft="@drawable/agrar_carrito"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
             >
 
+        </Button>
 
-
-
-            <TextView
-                android:id="@+id/card_plato_nombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:textStyle="bold"
-
-                />
-
-            <TextView
-                android:id="@+id/card_plato_precio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                />
 
             <TextView
                 android:id="@+id/card_plato_tipo"
@@ -66,17 +116,12 @@
                 />
 
 
-            <Button
-                android:id="@+id/card_plato_boton_detalle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Detalle"
-                android:layout_gravity="center"/>
+
 
 
         </LinearLayout>
 
 
-    </LinearLayout>
+
 
 </com.google.android.material.card.MaterialCardView>

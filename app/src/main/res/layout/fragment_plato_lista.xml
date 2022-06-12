@@ -3,7 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="Fragment.Plato_Lista_Fragment">
+    tools:context="Fragment.Plato_Lista_Fragment"
+    android:paddingTop="20dp"
+
+    >
 
 
     <androidx.core.widget.NestedScrollView
@@ -12,6 +15,8 @@
 
         android:background="@color/white"
         android:elevation="8dp"
+        android:backgroundTint="@color/white"
+
         >
 
         <androidx.recyclerview.widget.RecyclerView

@@ -10,6 +10,10 @@ public class Pedido_x_PlatopModel {
     Integer id_plato;
     Double total;
 
+    Integer idpedido;
+    Integer idplato;
+
+
     public Pedido_x_PlatopModel(Double total) {
         this.total = total;
     }
@@ -89,4 +93,27 @@ public class Pedido_x_PlatopModel {
     public Pedido_x_PlatopModel() {
     }
 
+
+    public Integer getIdpedido() {
+        return idpedido;
+    }
+
+    public void setIdpedido(Integer idpedido) {
+        this.idpedido = idpedido;
+    }
+
+    public Integer getIdplato() {
+        return idplato;
+    }
+
+    public void setIdplato(Integer idplato) {
+        this.idplato = idplato;
+    }
+
+    public Pedido_x_PlatopModel( Double subtotal, Integer cantidad,Integer idpedido, Integer idplato) {
+        this.idpedido = idpedido;
+        this.cantidad = cantidad;
+        this.subtotal = subtotal;
+        this.idplato = idplato;
+    }
 }

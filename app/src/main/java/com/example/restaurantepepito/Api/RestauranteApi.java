@@ -18,7 +18,7 @@ public interface RestauranteApi {
 
 
     @GET( "restaurante/listar_restaurante" )
-    Call<List<RestauranteModel>> listar_restaurante ();
+    Call<RestauranteModel> listar_restaurante ();
 
 
 

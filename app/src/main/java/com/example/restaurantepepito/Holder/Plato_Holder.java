@@ -56,12 +56,15 @@ public class Plato_Holder extends RecyclerView.ViewHolder implements View.OnClic
 
     @Override
     public void onClick(View v) {
+
+        Double precio_m  = Double.parseDouble(precio.getText().toString().replace("S/",""));
+
         MainActivity myActivity = (MainActivity)context;
         Bundle datosAEnviar = new Bundle();
         datosAEnviar.putInt("id_plato", id_plato);
         datosAEnviar.putString("descripcion",descripcion);
         datosAEnviar.putString("nombre", nombre.getText().toString());
-        datosAEnviar.putDouble("precio", Double.parseDouble(precio.getText().toString()));
+        datosAEnviar.putDouble("precio", precio_m);
         datosAEnviar.putString("imagen",imagen_url);
 
 

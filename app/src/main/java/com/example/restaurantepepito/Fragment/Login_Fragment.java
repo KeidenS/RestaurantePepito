@@ -1,11 +1,13 @@
 package com.example.restaurantepepito.Fragment;
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class Login_Fragment extends Fragment {
@@ -30,10 +33,13 @@ public class Login_Fragment extends Fragment {
     private Button boton_registrar;
     FirebaseAuth mAuth;
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
+
 
     }
 
@@ -46,6 +52,27 @@ public class Login_Fragment extends Fragment {
         contraseña = view.findViewById(R.id.login_contraseña_usuario);
         boton = view.findViewById(R.id.login_boton_iniciar_sesion);
         boton_registrar = view.findViewById(R.id.login_boton_crear_cuenta);
+
+        /*PRUEBAS*/
+
+        Location location = new Location("localizacion 1");
+        location.setLatitude(-11.981281651703803);  //latitud
+        location.setLongitude(-77.09612056683909); //longitud
+        Location location2 = new Location("localizacion 2");
+        location2.setLatitude(-11.982026191830284);  //latitud
+        location2.setLongitude(-77.09047833720668); //longitud
+        double distance = location.distanceTo(location2);
+        Log.e("================","Distancia ==========================="+distance);
+
+
+
+
+
+
+
+        /*FIN PRUEBAS*/
+
+
 
 
         boton.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +100,10 @@ public class Login_Fragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //Intent intent = new Intent (getContext(), MainActivity.class);
+        //startActivity(intent);
+
     }
 
 }

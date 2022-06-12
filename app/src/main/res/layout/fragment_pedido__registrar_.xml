@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-xmlns:tools="http://schemas.android.com/tools"
-tools:context="Fragment.Pedido_Registrar_Fragment">
+
 
 
 <androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -25,104 +22,425 @@ tools:context="Fragment.Pedido_Registrar_Fragment">
 
             <androidx.recyclerview.widget.RecyclerView
 
-                android:id="@+id/rv_carrito_lista_grid"
+                android:id="@+id/rv_carrito_pedido_lista_grid"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
 
 
 
-
-
-        <Spinner
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/carrito_spinner_restaurante">
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        </Spinner>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver Mapa"
-            android:id="@+id/pedido_boton_ver_mapa">
 
-        </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Direccion del restaurante :"
+                android:fontFamily="@font/playfair_display_medium"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:id="@+id/restaurante_text_titulo"
+                >
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/carrito_spinner_direccion">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
 
-        </Spinner>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Agregar Direccion"
-            android:id="@+id/pedido_boton_agregar_direccion">
-        </Button>
+                <com.google.android.material.textfield.TextInputLayout
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/carrito_id_tipo_pedido">
 
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/carrito_plazo_pedido">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_carrito_hora">
-
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_restaurante_text">
-
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/id_direccion_text">
-
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fecha">
-
-        </TextView>
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".80"
+                    android:textColor="@color/black"
+                    android:background="@drawable/borde"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
 
 
 
+                    >
 
-        <Button
-            android:id="@+id/carrito_boton_feha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text="Fecha">
-
-        </Button>
-        <Button
-            android:id="@+id/carrito_boton_hora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text="Hora">
-
-        </Button>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pedido_edittext_restaurante"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borde"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:focusable="false"
+                        android:fontFamily="@font/playfair_display_medium"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
+
+                <Button
+                    android:id="@+id/pedido_boton_ver_mapa"
+
+                    android:drawableLeft="@drawable/ic_mapa"
+                    android:background="@color/amarillo_h"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".20"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:autoSizeTextType="uniform"
+
+
+                   >
+
+
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Seleccione su direccion de entrega:"
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/direccion_text_titulo">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <Spinner
+                        android:id="@+id/pedido_spinner_direccion"
+
+
+                        android:fontFamily="@font/playfair_display_medium"
+                        android:popupBackground="@color/amarillo_h"
+
+
+
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".80"
+                        android:textColor="@color/black"
+                        android:background="@drawable/borde"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+
+
+
+
+
+                        android:elevation="20dp">
+
+                    </Spinner>
+
+                    <Button
+                        android:id="@+id/pedido_boton_agregar_direccion"
+
+                        android:drawableLeft="@drawable/ic_agregar_direccion"
+
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".20"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:background="@color/amarillo_h"
+
+
+                        >
+
+
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pedido_id_tipo_pedido"
+                android:visibility="gone">
+
+            </TextView>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pedido_plazo_pedido"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/playfair_display_medium"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-Atencion de 9:00 a 8:00"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/playfair_display_medium"
+                android:layout_marginBottom="5dp"
+                android:textSize="15dp">
+
+            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Registro valido apartir de 30 minutos de la hora actual"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="10dp"
+                    android:visibility="gone">
+
+                </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight=".80"
+                    android:textColor="@color/black"
+
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    android:textColorHint="@color/vino_h"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pedido_hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Hora"
+
+                        android:textColorHint="@color/vino_h"
+                        android:textColor="@color/vino_h"
+                        android:focusable="false"
+                        android:fontFamily="@font/playfair_display_medium"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/pedido_boton_hora"
+
+                    android:background="@color/amarillo_h"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".20"
+                    android:textColor="@color/black"
+
+                    android:autoSizeTextType="uniform"
+
+                    android:drawableLeft="@drawable/ic_hora"
+                    >
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_pedido_restaurante"
+                android:visibility="gone">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_pedido_direccion"
+                android:visibility="gone">
+
+            </TextView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight=".80"
+                    android:textColor="@color/black"
+
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    android:textColorHint="@color/vino_h"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pedido_fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Fecha"
+                        android:textColorHint="@color/vino_h"
+                        android:textColor="@color/vino_h"
+                        android:focusable="false"
+                        android:fontFamily="@font/playfair_display_medium"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/pedido_boton_feha"
+
+                    android:background="@color/amarillo_h"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".20"
+                    android:textColor="@color/black"
+
+                    android:autoSizeTextType="uniform"
+
+                    android:drawableLeft="@drawable/ic_fecha"
+                    >
+
+                </Button>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/costo_envio_text_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Costo de envio:"
+
+                android:textSize="15dp"
+                android:fontFamily="@font/playfair_display_regular"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                >
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pedido_monto_envio"
+                android:hint="S/8.08"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/playfair_display_bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Costo Total:"
+
+                android:textSize="15dp"
+                android:fontFamily="@font/playfair_display_regular"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pedido_monto_total"
+                android:hint="S/200.00"
+                android:layout_marginBottom="20dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/playfair_display_bold"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/pedido_boton_realizar_pago"
+                android:layout_width="match_parent"
+
+                android:drawableLeft="@drawable/pago"
+                android:text="Realizar Pago"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/playfair_display_bold">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
 

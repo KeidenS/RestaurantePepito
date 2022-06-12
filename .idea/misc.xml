@@ -3,7 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable-v24/background_green.xml" value="0.2475" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable-v24/borde.xml" value="0.2955" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2475" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/background_red.xml" value="0.1" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/boton_pulsado.xml" value="0.364" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/boton_redondo.xml" value="0.1" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/descargar.xml" value="0.346" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_agregar_direccion.xml" value="0.2475" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_baseline_access_time_filled_24.xml" value="0.4445" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_eliminar.xml" value="0.2475" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_error.xml" value="0.1" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_fecha.xml" value="0.2475" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_hora.xml" value="0.2475" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3365" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_mapa.xml" value="0.4445" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/drawable/ic_ok.xml" value="0.2475" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout-w1240dp/navigation_view.xml" value="0.15528781793842034" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout-w1240dp/toolbar.xml" value="0.15528781793842034" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout-w936dp/carrito_lista_card.xml" value="0.1" />
@@ -11,24 +26,39 @@
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/activity_main.xml" value="0.446875" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/activity_maps.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/carrito_lista_card.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/carrito_pedido_lista_card.xml" value="0.1" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/custom_toast_error.xml" value="0.19829059829059828" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/custom_toast_exito.xml" value="0.11944444444444445" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/custom_toast_ok.xml" value="0.19829059829059828" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_cancelacion.xml" value="0.225" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_card_direccion.xml" value="0.446875" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_card_plato_lista.xml" value="0.21732522796352582" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_carrito.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_carrito_.xml" value="0.21732522796352582" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_carrito_gestionar.xml" value="0.19829059829059828" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_detalle__pedido_.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_direccion_lista.xml" value="0.446875" />
-        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_direccion_registrar.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_direccion_registrar.xml" value="0.1" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_envio_cliente_detalle.xml" value="0.35512820512820514" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_historial_card.xml" value="0.3828571428571429" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_historial_lista.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_home_.xml" value="0.446875" />
-        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_login_.xml" value="0.446875" />
-        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_pedido__registrar_.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_login_.xml" value="0.3041575492341357" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_pago.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_pedido__registrar_.xml" value="0.29764453961456105" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_plato__lista__grid_.xml" value="0.21732522796352582" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_plato_detalle.xml" value="0.2857142857142857" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_plato_lista.xml" value="0.11930091185410334" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_registrar__usuario_direccion_.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_registrar_direccion_usuario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_tipo_pedido.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/fragment_usuario_actualizar.xml" value="0.24273858921161826" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/frament_carrito_lista.xml" value="0.19829059829059828" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/layout2.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/navigation_view.xml" value="0.24166666666666667" />
-        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/toolbar.xml" value="0.446875" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/layout/toolbar.xml" value="0.2463768115942029" />
         <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/menu/navigation_menu.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Box/Desktop/RestaurantePepito/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2475" />
       </map>
     </option>
   </component>

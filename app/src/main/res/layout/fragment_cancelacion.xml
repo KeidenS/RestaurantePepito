@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Cancelacion_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Politicas de Cancelacion:"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/playfair_display_medium">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Tiene derecho a cancelar un pedido dentro de un plazo razonable (antes de que se haya iniciado su preparación)."
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/playfair_display_medium">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Cualquier pago efectuado antes de que 'Restaurante Pepito' cancele un pedido será reembolsado"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/playfair_display_medium">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Los reembolosos sen realizaran una vez que el 'Restaurante Pepito' confirme su cancelacion"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/playfair_display_medium">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivo de cancelacion: "
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/playfair_display_medium">
+
+        </TextView>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="text|textMultiLine"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/motivo_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:fontFamily="@font/playfair_display_medium"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/boton_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Cancelacion"
+            android:textColor="@color/black"
+            android:fontFamily="@font/playfair_display_bold">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</FrameLayout>

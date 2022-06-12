@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="rojo_h">#e43434</color>
+    <color name="amarillo_h">#f3d34c</color>
+    <color name="vino_h">#5c0c1c</color>
+    <color name="carne_h">#cab18a</color>
+    <color name="verde_h">#87cb5a</color>
+
+
+
 </resources>

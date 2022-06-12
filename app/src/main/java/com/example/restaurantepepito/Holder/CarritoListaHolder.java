@@ -8,14 +8,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.restaurantepepito.Fragment.Carrito_Gestionar_Fragment;
 import com.example.restaurantepepito.MainActivity;
 import com.example.restaurantepepito.R;
 import com.example.restaurantepepito.SQLite.DbPedido_x_Plato;
 
-public class CarritoListaHolder extends RecyclerView.ViewHolder implements  View.OnClickListener {
+public class CarritoListaHolder extends RecyclerView.ViewHolder{
 
     public Context context;
 
@@ -23,8 +26,7 @@ public class CarritoListaHolder extends RecyclerView.ViewHolder implements  View
     public TextView precio;
     public TextView cantidad;
     public TextView subtotal;
-    public Button eliminar;
-    public LinearLayout contenedor;
+
 
     public Integer id_pedido;
     public Integer id_plato;
@@ -53,34 +55,17 @@ public class CarritoListaHolder extends RecyclerView.ViewHolder implements  View
 
 
 
-        contenedor  = itemView.findViewById(R.id.card_carrito_contenedor);
-        nombre = itemView.findViewById(R.id.card_carrito_nombre);
-        precio = itemView.findViewById(R.id.card_carrito_precio);
-        cantidad = itemView.findViewById(R.id.card_carrito_cantidad);
-        subtotal = itemView.findViewById(R.id.card_carrito_subtotal);
-        eliminar = itemView.findViewById(R.id.card_carrito_boton_eliminar);
-    }
 
-    @Override
-    public void onClick(View view) {
-
-        MainActivity myActivity = (MainActivity)context;
-
-        DbPedido_x_Plato db_pedido = new DbPedido_x_Plato(myActivity);
-
-        Log.e("=====", ""+id_pedido);
-
-        if(db_pedido.eliminarPedido(id_pedido)){
-            contenedor.setVisibility(View.GONE);
-        }
-
-
+        nombre = itemView.findViewById(R.id.card_carrito_pedido_nombre);
+        precio = itemView.findViewById(R.id.card_carrito_pedido_precio);
+        cantidad = itemView.findViewById(R.id.card_carrito_pedido_cantidad);
+        subtotal = itemView.findViewById(R.id.card_carrito_pedido_subtotal);
 
     }
 
-    public void setOnclickListeners(){
-        eliminar.setOnClickListener(this);
-    }
+
+
+
 
 
 }

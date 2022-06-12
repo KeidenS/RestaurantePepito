@@ -11,19 +11,26 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.restaurantepepito.Fragment.Carrito_Fragment;
+import com.example.restaurantepepito.Fragment.Carrito_Gestionar_Fragment;
+import com.example.restaurantepepito.Fragment.Fragment_Historial_Lista;
 import com.example.restaurantepepito.Fragment.Home_Fragment;
-import com.example.restaurantepepito.Fragment.Login_Fragment;
 import com.example.restaurantepepito.Fragment.Plato_Lista_Fragment;
 import com.example.restaurantepepito.Fragment.Usuario_Actualizar_Fragment;
 import com.example.restaurantepepito.SQLite.DbHelper;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity implements  NavigationHost{
+import java.text.DecimalFormat;
+
+public class MainActivity extends AppCompatActivity implements  NavigationHost {
 
 
     private DrawerLayout drawerLayout;
@@ -36,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements  NavigationHost{
         if(savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.container_home, new Home_Fragment())
+                    .add(R.id.container_home, new Fragment_Historial_Lista())
                     .commit();
         }
 
@@ -70,6 +77,10 @@ public class MainActivity extends AppCompatActivity implements  NavigationHost{
         });
 
 
+
+
+
+
     }
 
     @Override
@@ -83,7 +94,8 @@ public class MainActivity extends AppCompatActivity implements  NavigationHost{
         if(id_menu == R.id.menu_plato) navigateTo(new Plato_Lista_Fragment(),true);
         else if (id_menu == R.id.menu_home) navigateTo(new Home_Fragment(),true);
         else if (id_menu == R.id.menu_mi_cuenta) navigateTo(new Usuario_Actualizar_Fragment(),true);
-        else if (id_menu == R.id.menu_carrito) navigateTo(new Carrito_Fragment(),true);
+        else if (id_menu == R.id.menu_carrito) navigateTo(new Carrito_Gestionar_Fragment(),true);
+        else if (id_menu == R.id.menu_historial) navigateTo(new Fragment_Historial_Lista(),true);
 
     }
 
@@ -100,4 +112,39 @@ public class MainActivity extends AppCompatActivity implements  NavigationHost{
 
         transaction.commit();
     }
+
+    @Override
+    public void toastIncorrecto(String msg) {
+
+            LayoutInflater layoutInflater = getLayoutInflater();
+            View view = layoutInflater.inflate(R.layout.custom_toast_error, (ViewGroup) findViewById(R.id.ll_custom_toast_error));
+            TextView txtmensaje = view.findViewById(R.id.custom_toast_error_text_view);
+            txtmensaje.setText(msg);
+
+            android.widget.Toast toast = new android.widget.Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.BOTTOM, 0,200);
+            toast.setDuration(android.widget.Toast.LENGTH_LONG);
+            toast.setView(view);
+            toast.show();
+
+
+    }
+
+    @Override
+    public void toastCorrecto(String msg) {
+
+        LayoutInflater layoutInflater = getLayoutInflater();
+        View view = layoutInflater.inflate(R.layout.custom_toast_ok, (ViewGroup) findViewById(R.id.ll_custom_toast_ok));
+        TextView txtmensaje = view.findViewById(R.id.custom_toast_ok_text_view);
+        txtmensaje.setText(msg);
+
+        android.widget.Toast toast = new android.widget.Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.BOTTOM, 0,200);
+        toast.setDuration(android.widget.Toast.LENGTH_LONG);
+        toast.setView(view);
+        toast.show();
+
+    }
+
+
 }

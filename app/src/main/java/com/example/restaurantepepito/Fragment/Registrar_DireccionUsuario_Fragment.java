@@ -7,6 +7,7 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,10 +71,11 @@ public class Registrar_DireccionUsuario_Fragment extends Fragment {
     FirebaseAuth mAuth;
 
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mAuth = FirebaseAuth.getInstance();
+
 
         Bundle datosRecuperados = getArguments();
         if (datosRecuperados != null) {
@@ -114,6 +116,7 @@ public class Registrar_DireccionUsuario_Fragment extends Fragment {
 
                 LatLng lima = new LatLng(-12.045099033676845, -77.04291264078462);
                 mMap.addMarker(new MarkerOptions().position(lima).title("Marcador en Lima"));
+
 
 
                 mMap.setMaxZoomPreference(20);
@@ -161,6 +164,8 @@ public class Registrar_DireccionUsuario_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Location mi_ubicacion = miUbicacion();
+                Log.e("=========",""+mi_ubicacion.getLongitude());
+                Log.e("=========",""+mi_ubicacion.getLatitude());
                 asignar_nombres_direcciones(mi_ubicacion.getLatitude(),miUbicacion().getLongitude());
                 ubicarCamara(mi_ubicacion.getLatitude(),mi_ubicacion.getLongitude());
             }
@@ -256,7 +261,9 @@ public class Registrar_DireccionUsuario_Fragment extends Fragment {
         }
 
         LocationManager locationManager = (LocationManager) getContext().getSystemService(getContext().LOCATION_SERVICE);
+
         Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
         return location;
 
     }

@@ -12,6 +12,7 @@ import com.example.restaurantepepito.Model.PlatoModel;
 import com.example.restaurantepepito.R;
 import com.squareup.picasso.Picasso;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class Plato_Adapter extends RecyclerView.Adapter<Plato_Holder>{
@@ -35,8 +36,7 @@ public class Plato_Adapter extends RecyclerView.Adapter<Plato_Holder>{
 
             PlatoModel plato_model = plato_lista.get(position);
 
-
-            String precio = Double.toString(plato_model.getPrecio());
+            String precio = "S/"+String.format("%.2f",plato_model.getPrecio());
             String nombre= plato_model.getNombre();
             String tipo= plato_model.getTipo_plato();
             String descripcion= plato_model.getDescripcion();
